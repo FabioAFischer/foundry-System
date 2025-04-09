@@ -1,0 +1,19 @@
+{
+  "name": "verden",
+  "title": "Contos De Mar e Terra",
+  "description": "Sistema para jogar contos de mar e terra",
+  "author": "Fábio Fischer",
+  "version": 1.0,
+  "minimumCoreVersion": "12.0",
+  "compatibileCoreVersion": "12.0",
+
+  "esmodules": ["verden.js"],
+  "style": ["verden.css"],
+  "packs": {},
+  "language": [],
+
+  "gridDistance": 1,
+  "gridUnits": "espaço",
+  "primaryTokenAttribute": "Vida",
+  "initiative": "1d100"
+}
