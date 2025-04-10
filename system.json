@@ -1,38 +1,33 @@
 {
   "id": "verden",
+  "type": "system",
   "title": "Contos de Mar e Terra",
   "description": "Sistema para jogar Contos de mar e terra.",
   "version": "1.0.0",
   "compatibility": {
-    "minimum": 12,
-    "verified": 12
+    "minimum": "12",
+    "verified": "12"
   },
   "authors": [{
     "name": "Fabio Fischer"
   }],
   "esmodules": ["verden.mjs"],
   "styles": ["styles/system-styles.css"],
-  "packs": [{
-    "name": "monsters",
-    "label": "My Monsters",
-    "type": "Actor"
-  },
-  {
-    "name": "items",
-    "label": "My Items",
-    "type": "Item"
-  }],
-  "documentTypes": {
-    "Item": {
-      "weapon": {},
-      "spell": {}
+  "packs": [
+    {
+      "name": "monsters",
+      "label": "My Monsters",
+      "type": "Actor"
+    },
+    {
+      "name": "items",
+      "label": "My Items",
+      "type": "Item"
     }
-  },
+  ],
   "initiative": "1d100",
   "grid": {
     "distance": 1,
     "units": "espaço"
-  },
-  "primaryTokenAttribute": "vida",
-  "secondaryTokenAttribute": "mana"
+  }
 }
