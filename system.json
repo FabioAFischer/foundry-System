@@ -1,19 +1,38 @@
 {
   "id": "verden",
-  "title": "Contos De Mar e Terra",
-  "description": "Sistema para jogar contos de mar e terra",
-  "author": "Fábio Fischer",
-  "version": 1.0,
-  "minimumCoreVersion": "12.0",
-  "compatibileCoreVersion": "12.0",
-
-  "esmodules": ["verden.js"],
-  "style": ["verden.css"],
-  "packs": {},
-  "language": [],
-
-  "gridDistance": 1,
-  "gridUnits": "espaço",
-  "primaryTokenAttribute": "Vida",
-  "initiative": "1d100"
+  "title": "Contos de Mar e Terra",
+  "description": "Sistema para jogar Contos de mar e terra.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": 12,
+    "verified": 12
+  },
+  "authors": [{
+    "name": "Fabio Fischer"
+  }],
+  "esmodules": ["verden.mjs"],
+  "styles": ["styles/system-styles.css"],
+  "packs": [{
+    "name": "monsters",
+    "label": "My Monsters",
+    "type": "Actor"
+  },
+  {
+    "name": "items",
+    "label": "My Items",
+    "type": "Item"
+  }],
+  "documentTypes": {
+    "Item": {
+      "weapon": {},
+      "spell": {}
+    }
+  },
+  "initiative": "1d100",
+  "grid": {
+    "distance": 1,
+    "units": "espaço"
+  },
+  "primaryTokenAttribute": "vida",
+  "secondaryTokenAttribute": "mana"
 }
